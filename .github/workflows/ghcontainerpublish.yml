@@ -1,5 +1,9 @@
-name: Publish Docker
-on: [push]
+name: Publish Docker Container Registry
+#on: [push]
+on:
+  push:
+    branches:
+      - master
 jobs:
   build:
     runs-on: ubuntu-latest
